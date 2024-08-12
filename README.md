@@ -17,6 +17,7 @@ In this section, I will be adding resources that I find on the internet about Ru
 ### Online Tutorials and Articles
 
 - [The Rust Programming Language Book](https://doc.rust-lang.org/book/)
+- [Curated List of Rust Resources](https://github.com/rust-unofficial/awesome-rust)
 
 
 ### Videos and Courses
