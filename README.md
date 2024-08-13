@@ -32,9 +32,6 @@ In this section, I will be adding resources that I find on the internet about Ru
 
 If you have any suggestions or additional resources that you think would be helpful, feel free to open an issue or submit a pull request. Let's learn Rust together!
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
