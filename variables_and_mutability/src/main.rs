@@ -20,5 +20,5 @@ fn main() {
     println!("The value of y is: {y}");
 
     let mut spaces = "  ";
-    spaces = spaces.len();
+    // spaces = spaces.len();
 }

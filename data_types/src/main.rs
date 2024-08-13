@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     //  Scalar Types (Integers, floating-point numbers, Booleans, and characterss)
     // Integer Types
@@ -32,4 +34,63 @@ fn main() {
     let remainder = 43 % 5;
 
     println!("{sum}, {difference}, {product}, {quotient}, {truncated}, {remainder}");
+
+    //  Boolean Type
+
+    let t = true;
+
+    let f: bool = false; // with explicit type annotation
+
+    println!("{t} {f}");
+
+    // Character Type
+
+    let c = 'z';
+    let z: char = 'Z'; // with explicit type annotation
+    let heart_eyed_cat = '😻';
+
+    println!("{c} {z} {heart_eyed_cat}");
+
+    // Compound Types
+    // Tuple Type
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (a, b, c) = tup; // destructuring using pattern matching
+
+    println!("{a} {b} {c}");
+
+    let gone: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hundred = gone.0;
+    let six_point_four = gone.1;
+    let one = gone.2;
+    println!("zero: {five_hundred} one: {six_point_four} two:{one}");
+
+    // Array Type
+    let states = [1, 2, 3, 4, 5];
+    let states: [i32; 5] = [1, 2, 3, 4, 5]; // Explicit type annotation
+
+    let right = [3; 5]; // contain the same value of each element
+
+    println!("right: {:?}", right); // use debug formating
+
+    let first_index = states[0];
+    println!("{first_index}");
+
+    // Invalid Array Element Access
+    let invalid_array = [1, 2, 3, 4, 5];
+    println!("Please enter an array index.");
+
+    let mut index = String::new();
+
+    io::stdin()
+        .read_line(&mut index)
+        .expect("Failed to read line");
+
+    let index: usize = index
+        .trim()
+        .parse()
+        .expect("Index entered was not a number");
+
+    let element = invalid_array[index];
+
+    println!("The value of the element at index {index} is: {element}");
 }
